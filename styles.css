@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+body {
+    background: #d6eeff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.weather-input {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    
+}
+
+.forecast-section {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(132, 148, 218, 0.086);
+}
+
+.hour_card {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px 16px;
+    border-radius: 10px;
+    text-align: center;
+    list-style: none;
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    font-size: 14px;
+    color: #333;
+}
+
+.card h1 {
+    font-size: 18px;
+    color: #333;
+}
+
+.weather_icon, .card img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80px; 
+    width: 80px;
+    margin: 0 auto 10px;
+}
+
+
+.weather_icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    margin: 0 auto 10px;
+}
+
+.icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 150px;
+    width: 100px;
+    margin: 2rem auto;
+}
+
+
+
+.weather-input .searchbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.weather-input .searchbar input {
+    flex-grow: 1;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.weather-input .converter {
+    margin-left: 10px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    background-color: white;
+    border: none;
+}
+
+.weather-input .search-btn, 
+.weather-input .user_location {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.weather-input .search-btn {
+    background-color: #007bff;
+}
+
+.weather-input .user_location {
+    background-color: #28a745;
+}
+
+.weather-output {
+    text-align: center;
+    padding: 1rem;
+    overflow: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f4f4f4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li.checked {
+    background-color: chocolate;
+    color: white;
+    border-radius: 50px;
+}
+
+
+
+
+

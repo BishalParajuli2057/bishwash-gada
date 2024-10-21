@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-input">
+            <div class="searchbar">
+                <input type="text" id="city-input" placeholder="Search for place">
+            </div>
+            <div class="wrapper">
+                <label for="check">
+                    <input type="checkbox">
+                    <a>Favuorite</a>
+                </label>
+            </div>
+            <select class="converter" id="converter">
+                <option value="celsius">°C</option>
+                <option value="fahrenheit">°F</option>
+            </select>
+            <button class="search-btn">Search</button>
+            <button class="user_location">Use current location</button>
+
+
+            <div class="weather-output">
+                <h2 class="Todays heading">Today's Highlights</h2>
+                <div class="information">
+                    <div class="city">
+                        <h1 id="city"></h1>
+                    </div>
+                    <div class="humidity">Humidity
+                        <h1 id="humidityvalue"></h1>
+                    </div>
+                    <div class="Temperature">Temperature
+                        <h1 id="Temperaturevalue"></h1>
+                    </div>
+                    <div class="Wind">Wind speed
+                        <h1 id="winfspeedvalue"></h1>
+                    </div>
+                    <div class="icon"> </div>
+                </div>
+                <h2>Favuorite List</h2>
+                <ul id="list-container">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> -->
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="forecast-section">
+            <h2>24-hour Forecast</h2>
+            <div class="hoursforcast">
+                <ul class="hour_card">
+                    <li class="card">
+                        <h3 ></h3>
+                        <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+                        <h1></h1>
+                        <h1></h1>
+                        <h1></h1>
+                    </li>
+                    <li class="card">
+                        <h3 ></h3>
+                        <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+                        <h1></h1>
+                        <h1></h1>
+                        <h1></h1>
+                    </li>
+                    <li class="card">
+                        <h3 ></h3>
+                        <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+                        <h1></h1>
+                        <h1></h1>
+                        <h1></h1>
+                    </li>
+                    <li class="card">
+                        <h3 ></h3>
+                        <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+                        <h1></h1>
+                        <h1></h1>
+                        <h1></h1>
+                    </li>
+                    <li class="card">
+                        <h3 ></h3>
+                        <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+                        <h1></h1>
+                        <h1></h1>
+                        <h1></h1>
+                    </li>
+                    <li class="card">
+                        <h3 ></h3>
+                        <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+                        <h1></h1>
+                        <h1></h1>
+                        <h1></h1>
+                    </li>
+                </ul>
+
+                <div id="chart"></div>
+
+            </div>
+
+        </div>
+
+        
+
+
+        
+    </div>
+</body>
+
+</html>
